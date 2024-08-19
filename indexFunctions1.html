@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with JavaScript functions -->
+<h1>JavaScript Functions</h1>
+
+<!-- the p element that explains what calling a function does of performing a calculation and returning the result of this particular process right after -->
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<!-- the p element containing an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the myFunction function that has each of the p1 and p2 parameters inside of it's parentheses
+function myFunction(p1, p2) {
+
+  // the line of code that is returning the value of p1 and p2 that are being multiplied by the * operator
+  return p1 * p2;
+}
+
+// the result variable (declared by the let keyword) that is assigned the myFunction function to carry the values that each of the p1 and p2 parameters carry of one parameter carrying 4 and the other parameter carrying 3
+let result = myFunction(4, 3);
+
+// the particular line of code that is telling the browser of this document/webpage to output the result variable of it's own value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
