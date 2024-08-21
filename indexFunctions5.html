@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this particular webpage that has to do with more of JavaScript functions -->
+<h1>JavaScript Functions</h1>
+
+<!-- the p element that is explaining about what accessing a function without the parentheses does of mostly returning the function while now the result of the function itself -->
+<p>Accessing a function without () returns the function and not the function result:</p>
+
+<!-- the p element that contains only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the toCelcius function that has the f variable inside of it's parentheses including a line of code that is also inside of it as well
+function toCelsius(f) {
+  // the line of code inside of the toCelcius function that is returning the formula for converting fahrenheit to celcuis
+  return (5/9) * (f-32);
+}
+
+// the value variable (declared by the let keyword) that's assigned the toCelcius function without any of it's parentheses at all
+let value = toCelsius;
+
+// the particular line of code that is inside of the opening and closing script tags that's telling the browser of this particular document/webpage to output the value variable of it's own value (of what would be the result of the entire function and not the result of any value from the function itself) into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = value;
+</script>
+
+</body>
+</html>

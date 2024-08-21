@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this specific webpage that has more to do with JavaScript functions -->
+<h1>JavaScript Functions</h1>
+
+<!-- the p element that has the same explanation that the p element from the previous webpage had already before this webpage in particular -->
+<p>Invoke (call) a function to convert from Fahrenheit to Celsius:</p>
+
+<!-- the p element containing an id called demo and nothing else that is included in this p element in specific -->
+<p id="demo"></p>
+
+<script>
+
+// the toCelcius function that has the f variable in it's parentheses while also a line of code that is inside of it
+function toCelsius(f) {
+  // the line of code inside of the toCelcius function that is returning the formula for converting fahrenheit to celcius
+  return (5/9) * (f-32);
+}
+
+// the value variable (declared by the let keyword) that is assigned the toCelcius function without any number value in it's parentheses
+let value = toCelsius();
+
+// the line of code in particular that is inside of the opening and closing script tags that's telling the browser of this specific document/webpage to output the value variable of it's own value (which would be the result of an unknown number value in this specific case scenario) into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = value;
+</script>
+
+</body>
+</html>

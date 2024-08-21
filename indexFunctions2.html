@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with JavaScript functions -->
+<h1>JavaScript Functions</h1>
+
+<!-- the p element that is explaining the nature behind calling a function of how it performs a calculation and then returns it's result right after -->
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<!-- the p element containing an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the x variable (declared by the let keyword) that is assigned the myFunction function that has the values of each being 4 and 3 in it's parentheses
+let x = myFunction(4, 3);
+
+// the particular line of code that's in the opening and closing script tags that is telling the browser of this document/webpage to output the x variable of it's own value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = x;
+
+// the myFunction function that has each of the 2 different variables being a and b inside of it's parentheses including a line of code inside of it also
+function myFunction(a, b) {
+
+  // the line of code inside of the myFunction function inside of the myFunction function that is returning the result of the a and b variables of their own values being multiplied by the * operator
+  return a * b;
+}
+</script>
+
+</body>
+</html>

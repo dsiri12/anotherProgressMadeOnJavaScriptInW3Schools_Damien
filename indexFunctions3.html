@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has to do with mainly JavaScript functions -->
+<h1>JavaScript Functions</h1>
+
+<!-- the p element that explains what to do of invoking (calling) that can convert from fahrenheit to celcius -->
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+
+<!-- the p element containing an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the toCelcius function that has the f variable in it's parentheses that also has a line of code inside of it
+function toCelsius(f) {
+
+  // the line of code inside of the toCelcius function that is returning the value of the particular formula that is for converting fahrenheit to celcius
+  return (5/9) * (f-32);
+}
+
+// the value variable (declared by the let keyword) that is assigned the toCelcius function that has the number 77 (being the temperature that is being converted from fahrenheit to celcius) inside of it's parentheses
+let value = toCelsius(77);
+
+// the particular line of code that's inside of the opening and closing script tags that is telling the browser of this current document/webpage to output the value variable of it's own value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = value;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with mainly JavaScript functions -->
+<h1>JavaScript Functions</h1>
+
+<!-- the p element that is explaining about what's outside of the myFunction function and where the carName variable would be "undefined" -->
+<p>Outside myFunction() carName is undefined.</p>
+
+<!-- the p element containing only an id called demo1 -->
+<p id="demo1"></p>
+
+<!-- the p element that contains an id called demo2 only and nothing else that is contained in this specific p element -->
+<p id="demo2"></p>
+
+<script>
+
+// the text variable (declared by the let keyword) that is assigned the expression of a string wrapped in double quotes and the typeof that is returning the carName variable of the type of variable which would be the result of "undefined" from what is mainly outside of the myFunction function
+let text = "Outside: " + typeof carName;
+
+// the line of code that's inside of the opening and closing script tags that is telling the browser of this document/webpage to output the text variable of it's own value being "undefined" into the HTML element being the p element containing an id called demo1
+document.getElementById("demo1").innerHTML = text;
+
+// the myFunction function that has a few lines of code inside of it
+function myFunction() {
+
+  // the carName variable (declared by the let keyword) that is assigned a string value wrapped in double quotes called "Volvo"
+  let carName = "Volvo";
+
+  // the text variable (declared by the let keyword) that's assigned a string value wrapped in double quotes including the typeof that is returning the carName variable of the type of variable being a string, another string value wrapped in double quotes that only has a space and no other characters inside of it, and the carName variable of it's own value that are being put together by the 3 + operators into a new string
+  let text = "Inside: " + typeof carName + " " + carName;
+
+  // the line of code in particular that is inside of the myFunction function that is telling the browser of this document/webpage to output the text variable of it's own value into the HTML element being the p element containing an id called demo2
+  document.getElementById("demo2").innerHTML = text;
+}
+
+// the myFunction function with its own parentheses inside of the opening and closing script tags that is being possibly called outside of it's own actual function
+myFunction();
+</script>
+
+</body>
+</html>
