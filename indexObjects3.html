@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with creating JavaScript objects -->
+<h1>Creating JavaScript Objects</h1>
+
+<!-- the h2 element that captions using an object literal from what this webpage is going to be about -->
+<h2>Using an Object Literal</h2>
+
+<!-- the p element that contains an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the single-line comment below that is saying for me to create an object
+// Create an Object:
+
+// the person variable/object (declared by the const keyword) that's assigned an array of each of the properties with their own values which are firstName being John, lastName being Doe, age being 50, and eyeColor being blue
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// the single-line comment below that is instructing me to display the data from the object being the person variable/object
+// Display Data from the Object:
+
+// the particular line of code inside of the opening and closing script tags that is telling the browser of this document/webpage to print out each of the firstName property of the person variable/object, the string value wrapped in double quotes called " is ", the age property of the person variable/object, and the string value wrapped in double quotes being " years old." that are being put together by the 3 + operators into a new string that'll be printed out into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>

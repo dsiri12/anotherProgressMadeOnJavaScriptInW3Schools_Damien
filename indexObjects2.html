@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage that has mainly to do with JavaScript objects -->
+<h1>JavaScript Objects</h1>
+
+<!-- the h2 element that is captioning creating an object of what this webpage will be about and also within JavaScript objects -->
+<h2>Creating an Object</h2>
+
+<!-- the p element containing only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the single-line comment below that's instructing me to create an object
+// Create an Object:
+
+// the car variable/object (declared by the const keyword) that is assigned an array with each of the parameters of their own values which are the type being Fiat, model being 500, and lastly the car being white
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// the single-line comment below that is saying for me to display data (being the array that is assigned the car variable/object) from the object (being the car variable)
+// Display Data from the Object:
+
+// the line of code in particular that is inside of the opening and closing script tags that's telling the browser of this current document/webpage to print out the string value wrapped in double quotes and also the value to the type for the car variable/object that are being put together by the + operator into a new string that'll be printed out into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML =
+"The car type is " + car.type;
+</script>
+
+</body>
+</html>
