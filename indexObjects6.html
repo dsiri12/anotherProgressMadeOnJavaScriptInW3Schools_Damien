@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this specific webpage that has to do with creating JavaScript objects -->
+<h1>Creating JavaScript Objects</h1>
+
+<!-- the h2 element captioning using the new keyword from what this specific webpage will be about -->
+<h2>Using the new Keyword</h2>
+
+<!-- the p element containing only an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the single line comment below that is instructing me to create an object of any sort
+// Create an Object
+
+// the person variable/object (declared by the const keyword) that is assigned new Object() alongside where each of the properties of the person object including their assigned values below are added to the person object
+const person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+
+// the single line comment below that is saying for me to display the object content from the person object
+// Diplay Object Content
+
+// the line of code in particular inside of the opening and closing script tags that is telling the browser of this specific document/webpage to print out the expression of the person object's firstName of it's own value, the person object's age of it's own value including the 2 different strings wrapped in double quotes that are being put together by the 3 + operators into a new atring that'll be printed out into the HTML element containing an id called demo
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
