@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this current webpage having to do with more of JavaScript objects -->
+<h1>JavaScript Objects</h1>
+
+<!-- the p element that is briefly explaining about what was explained about in the p element in the previous webpage before this webpage -->
+<p>There are two ways to access a property: object.property or object["property"]</p>
+
+<!-- the p element containing an id called demo only -->
+<p id="demo"></p>
+
+<script>
+
+// the single-line comment below that is instructing me to create an object of any sort
+// Create an Object:
+
+// the person variable/object (declared by the const keyword) that is assigned an array of 3 different properties with their own assigned values which are each firstName being "John", lastName being "Doe", and id being 5566
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// the single-line comment below that is saying for me to display the lastname property of it's own assigned value from the person object
+// Display lastName from the Object:
+
+// the line of code in particular inside of the opening and closing script tags that is telling the browser of this current document/webpage to print out the string value wrapped in double quotes and the object["property"] being person["lastName"] of it's own value that are each being put together by the + operator into a new string that'll be printed out into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML =
+"The last name is " +  person["lastName"];
+</script>
+
+</body>
+</html>
