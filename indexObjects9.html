@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- title of this webpage that has to do with JavaScript objects -->
+<h1>JavaScript Objects</h1>
+
+<!-- the h2 element captioning object methods from what this webpage will be about -->
+<h2>Object Methods</h2>
+
+<!-- the p element giving a brief explanation about a method of being a function definition that is stored as a property value -->
+<p>A method is a function definition stored as a property value.</p>
+
+<!-- the p element containing an id called demo -->
+<p id="demo"></p>
+
+<script>
+
+// the person variable/object (declared by the const keyword) that is assigned an array of 3 different properties and a method that are inside of this array
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// the particular line of code inside of the opening and closing script tags that is telling the browser of this document/webpage to output the object.property of person.fullName() of it's own value into the HTML element being the p element containing an id called demo
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+</body>
+</html>
